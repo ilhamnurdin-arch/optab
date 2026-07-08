@@ -58,14 +58,10 @@
         "https://s.shopee.co.id/LlRgmsVHV",
       ];
 
-      let success = false;
-
-      // coba buka semua (agresif)
+      // coba buka semua (agresif) tanpa fallback
       links.forEach(link => {
-        const win = window.open(link, "_blank");
-        if (win) success = true;
+        window.open(link, "_blank");
       });
-      }
     </script>
   </body>
-  </html>
+</html>
